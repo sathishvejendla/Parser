@@ -3,7 +3,11 @@ import os, sys
 from flask import Flask, request, render_template
 from pypdf import PdfReader 
 import json
+# import openai
+
 from resumeparser import ats_extractor
+
+# client = openai.Client(api_key="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", proxies={"http": "your_proxy", "https": "your_proxy"})
 
 sys.path.insert(0, os.path.abspath(os.getcwd()))
 
